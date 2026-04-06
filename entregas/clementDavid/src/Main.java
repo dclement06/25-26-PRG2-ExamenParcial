@@ -7,3 +7,11 @@ public class Main {
 }
 CuentaBancaria c1 = new CuentaBancaria("Ana García", 5000);
 CuentaBancaria c2 = new CuentaBancaria("Juan Pérez", 3000);
+public class Main {
+    public static void main(String[] args) {
+        CuentaBancaria cuentaAna = new CuentaBancaria("Ana García", 5000.0);
+        cuentaAna.depositar(1000.0);
+        assert cuentaAna.consultarSaldo() == 6000.0 : "Error: El saldo debería ser 6000";
+        System.out.println("Test Ingreso: PASADO");
+    }
+}
