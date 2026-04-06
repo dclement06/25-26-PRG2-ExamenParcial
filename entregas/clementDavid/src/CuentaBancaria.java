@@ -29,3 +29,8 @@ public void depositar(double cantidad) {
     assert cantidad > 0;
     this.modificarSaldo(cantidad);
 }
+public void retirar(double cantidad) {
+    assert cantidad > 0;
+    assert cantidad <= this.saldo;
+    this.modificarSaldo(-cantidad);
+}
