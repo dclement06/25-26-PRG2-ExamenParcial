@@ -11,3 +11,7 @@ public class Banco {
         this.cuentas = new ArrayList<>();
     }
 }
+public void registrarCuenta(CuentaBancaria cuenta) {
+    assert cuenta != null;
+    this.cuentas.add(cuenta);
+}
