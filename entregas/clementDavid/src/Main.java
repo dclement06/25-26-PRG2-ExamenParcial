@@ -18,3 +18,13 @@ public class Main {
         cuentaAna.retirar(2000.0);
         assert cuentaAna.consultarSaldo() == 4000.0 : "Error: El saldo debería ser 4000";
         System.out.println("Test Retirada: PASADO");
+
+        CuentaBancaria cuentaJuan = new CuentaBancaria("Juan Pérez", 3000.0);
+        Banco miBanco = new Banco("Banco Central");
+
+        miBanco.transferir(cuentaAna, cuentaJuan, 500.0);
+
+        assert cuentaAna.consultarSaldo() == 3500.0 : "Error en origen tras transferencia";
+        assert cuentaJuan.consultarSaldo() == 3500.0 : "Error en destino tras transferencia";
+        
+        System.out.println("Test Transferencia: PASADO");        
