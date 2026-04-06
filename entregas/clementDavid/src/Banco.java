@@ -20,3 +20,7 @@ public void transferir(CuentaBancaria origen, CuentaBancaria destino, double mon
     origen.retirar(monto);
     destino.depositar(monto);
 }
+@Override
+public String toString() {
+    return "Titular: " + titular + " | IBAN: " + iban + " | Saldo: " + saldo + "€";
+}
