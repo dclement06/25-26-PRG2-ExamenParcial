@@ -1,0 +1,1 @@
+public enum TipoCuenta { NOMINA, ESTANDAR, PREMIUM }
