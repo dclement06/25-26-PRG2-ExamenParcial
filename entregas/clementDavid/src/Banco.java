@@ -15,3 +15,8 @@ public void registrarCuenta(CuentaBancaria cuenta) {
     assert cuenta != null;
     this.cuentas.add(cuenta);
 }
+public void transferir(CuentaBancaria origen, CuentaBancaria destino, double monto) {
+    assert monto > 0;
+    origen.retirar(monto);
+    destino.depositar(monto);
+}
