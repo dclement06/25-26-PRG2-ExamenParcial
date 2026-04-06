@@ -16,3 +16,10 @@ private CuentaBancaria(String titular, double saldo, String iban, TipoCuenta tip
 public CuentaBancaria(String titular, double saldoInicial) {
     this(titular, saldoInicial, "ES-PENDIENTE", TipoCuenta.ESTANDAR);
 }
+public double consultarSaldo() {
+    return this.saldo;
+}
+
+public String consultarTitular() {
+    return this.titular;
+}
