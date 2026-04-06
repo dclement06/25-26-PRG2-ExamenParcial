@@ -25,3 +25,7 @@ public String consultarTitular() {
 private void modificarSaldo(double cantidad) {
     this.saldo += cantidad;
 }
+public void depositar(double cantidad) {
+    assert cantidad > 0;
+    this.modificarSaldo(cantidad);
+}
