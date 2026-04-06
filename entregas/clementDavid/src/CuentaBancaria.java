@@ -13,3 +13,6 @@ private CuentaBancaria(String titular, double saldo, String iban, TipoCuenta tip
     this.iban = iban;
     this.tipo = tipo;
 }
+public CuentaBancaria(String titular, double saldoInicial) {
+    this(titular, saldoInicial, "ES-PENDIENTE", TipoCuenta.ESTANDAR);
+}
