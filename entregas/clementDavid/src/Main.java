@@ -15,3 +15,6 @@ public class Main {
         System.out.println("Test Ingreso: PASADO");
     }
 }
+        cuentaAna.retirar(2000.0);
+        assert cuentaAna.consultarSaldo() == 4000.0 : "Error: El saldo debería ser 4000";
+        System.out.println("Test Retirada: PASADO");
