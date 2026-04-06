@@ -27,4 +27,7 @@ public class Main {
         assert cuentaAna.consultarSaldo() == 3500.0 : "Error en origen tras transferencia";
         assert cuentaJuan.consultarSaldo() == 3500.0 : "Error en destino tras transferencia";
         
-        System.out.println("Test Transferencia: PASADO");        
+        System.out.println("Test Transferencia: PASADO");   
+
+        System.out.println(cuentaAna.toString());
+        System.out.println(cuentaJuan.toString());     
