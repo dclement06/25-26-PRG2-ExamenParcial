@@ -4,3 +4,12 @@ public class CuentaBancaria {
     private String iban;
     private TipoCuenta tipo;
 }
+private CuentaBancaria(String titular, double saldo, String iban, TipoCuenta tipo) {
+    assert titular != null;
+    assert saldo >= 0;
+    assert iban != null;
+    this.titular = titular;
+    this.saldo = saldo;
+    this.iban = iban;
+    this.tipo = tipo;
+}
